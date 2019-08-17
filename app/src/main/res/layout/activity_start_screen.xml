@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_start_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.application.akscorp.yandextranslator2017.StartScreen"
+    android:clipToPadding="false">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:clipToPadding="false"
+        android:elevation="1dp">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_translate_black_36dp"
+            android:id="@+id/translate_section_button"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:background="?android:selectableItemBackground"
+            android:paddingTop="7dp"
+            android:paddingBottom="3dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_bookmark_black_36dp"
+            android:id="@+id/favourite_section_button"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:background="?android:selectableItemBackground" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_settings_black_36dp"
+            android:id="@+id/setting_section_button"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:background="?android:selectableItemBackground" />
+
+    </LinearLayout>
+
+</LinearLayout>
